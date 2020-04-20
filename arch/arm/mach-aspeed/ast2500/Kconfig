@@ -41,6 +41,10 @@ config TARGET_FBWEDGE400
 config TARGET_FBCMM
 	bool "Support Facebook's Openbmc CMM"
 
+config TARGET_AGC032A
+        bool "Support Facebook's Openbmc Agc032A"
+        select SUPPORT_SPL
+
 source "board/aspeed/evb_ast2500/Kconfig"
 source "board/fb-obmc/Kconfig"
 
